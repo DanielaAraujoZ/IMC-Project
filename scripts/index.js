@@ -1,4 +1,4 @@
-const server = "https://imc-project.herokuapp.com";
+const server = "https://imc-project.herokuapp.com/infoUsers";
 
 const buttonMale = document.getElementById("buttonMale");
 const buttonWoman = document.getElementById("buttonWoman");
@@ -51,6 +51,11 @@ buttonSend.addEventListener("click", () => {
 
   // //Obtiene los datos del local Storage
   let dataServer = JSON.parse(localStorage.getItem("DATAUSERS"));
+
+  //Permite visualizar los datos durante 5 segundos y recarga la pagina. 
+  setTimeout(() => {
+    window.location.reload()
+  },5000)
 });
 
 //Obtiene los datos del servidor de JSON para enviarlos al local Storage
