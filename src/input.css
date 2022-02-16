@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+
+:root {
+  --green: #50cf35;
+  --gray-bg: rgb(236, 235, 235);
+  --gray-text: #8a87879a;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  background-color: var(--gray-bg);
+  width: 80%;
+  margin: 0 auto 40px auto;
+  border-radius: 28px;
+}
+.movePage {
+  text-align: center;
+  margin: 50px 0 0 0;
+  font-size: 20px;
+  color: var(--gray-text);
+}
+a:visited {
+  color: red;
+}
+.dataToCapture {
+  background-color: white;
+  border-radius: 12px;
+}
+nav {
+  background-color: var(--green);
+  border-radius: 12px 12px 0 0;
+  color: white;
+  padding: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 4px 8px 4px var(--gray-text);
+  box-shadow: 0 4px 12px var(--gray-text);
+}
+.infoUser > p {
+  color: var(--gray-text);
+  font-weight: 600;
+  text-align: center;
+  margin: 28px 8px 8px 8px;
+  font-size: 16px;
+}
+.genre {
+  margin: 16px 24px;
+  gap: 8px;
+}
+.genre > button {
+  border: none;
+}
+.icon {
+  width: 48px;
+  background-color: white;
+}
+.genreButton {
+  background-color: white;
+  cursor: pointer;
+}
+.active {
+  border: 1px solid red;
+  background-color: var(--gray-bg);
+}
+label {
+  margin: 16px 24px;
+  align-items: center;
+  gap: 8px;
+}
+label > p {
+  margin-right: 12px;
+  margin-bottom: 0;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid var(--gray-text);
+  width: 50%;
+  margin-left: 10px;
+  height: 44px;
+  text-align: center;
+}
+input::placeholder {
+  font-size: 20px;
+  text-align: center;
+}
+
+#sendData {
+  background-color: var(--green);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 28px;
+  width: 70%;
+  margin: 12px auto;
+  margin-bottom: 28px;
+  border-radius: 16px;
+  padding: 4px 0;
+}
+#sendData:hover {
+  color: rgb(0, 32, 7);
+  border: 1px solid rgb(0, 32, 7);
+}
+
+.textGreen {
+  color: var(--green);
+  font-weight: 700;
+}
+.dataResult {
+  width: 35%;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+}
+
+#result {
+  font-size: 56px;
+  width: 100%;
+  font-weight: 700;
+}
+.progress-bar {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 56, 230, 1) 0%,
+    rgba(98, 227, 221, 1) 38%,
+    rgba(106, 223, 52, 1) 50%,
+    rgba(237, 245, 37, 1) 60%,
+    rgba(246, 130, 42, 1) 80%,
+    rgba(255, 0, 56, 1) 100%
+  );
+}
+.infoIMC {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 24px;
+  border: 1px solid var(--gray-text);
+  border-radius: 12px;
+  margin: 16px;
+  width: 50%;
+  margin: 8px auto;
+}
+.bajoPeso {
+  color: rgba(20, 56, 230, 1);
+  margin: 8px 12px;
+}
+.saludable {
+  color: var(--green);
+  margin: 16px 12px;
+}
+.excesoPeso {
+  color: yellow;
+  margin: 8px 12px;
+}
+.obeso {
+  color: rgb(255, 111, 0);
+  margin: 8px 12px;
+}
+.obesoExtremo {
+  color: red;
+  margin: 8px 12px;
+}

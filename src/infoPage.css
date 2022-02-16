@@ -1,0 +1,50 @@
+:root{
+    --green : #50CF35;
+    --gray-bg: rgb(236, 235, 235);
+    --gray-text: #8a87879a;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    background-color: var(--gray-bg);
+    width: 70%;
+    margin: 0 auto 40px auto;
+    border-radius: 28px;
+}
+
+.title{
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--green);
+    text-shadow: 8px 8px 6px white;
+    text-align: center;
+    margin-bottom: 0;
+}
+.total{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--green);
+    text-shadow: 8px 8px 6px white;
+    text-align: center;
+}
+.movePage{
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-size: 20px;
+    color: var(--gray-text);
+}
+a:visited{
+    color: red;
+}
+.info{
+    width: 40%;
+    margin: 20px auto;
+}
+table{
+    border: 5px solid black;
+    margin: 8px;
+}
