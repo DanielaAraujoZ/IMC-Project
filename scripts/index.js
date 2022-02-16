@@ -1,4 +1,4 @@
-const server = "http://localhost:4001/infoUsers";
+const server = "https://imc-project.herokuapp.com";
 
 const buttonMale = document.getElementById("buttonMale");
 const buttonWoman = document.getElementById("buttonWoman");
