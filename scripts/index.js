@@ -4,15 +4,23 @@ const buttonMale = document.getElementById("buttonMale");
 const buttonWoman = document.getElementById("buttonWoman");
 const buttonSend = document.getElementById("sendData");
 const result = document.getElementById("result");
+const form = document.getElementById("form");
 
 //Funcion que agrega active a los iconos de genero.
-function changeActive(buttonOn, buttonOff) {
-  buttonOn.classList.add("active");
-  buttonOff.classList.remove("active");
+function changeActive() {
+  let valueSelect = parseInt(document.getElementById("options").value);
+  if (valueSelect === 1) {
+    buttonMale.classList.add("active");
+    buttonWoman.classList.remove("active");
+  } else if (valueSelect === 2) {
+    buttonWoman.classList.add("active");
+    buttonMale.classList.remove("active");
+  }
 }
 
 //Evento de envio de datos
-buttonSend.addEventListener("click", () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   //Captura valores de los inputs
   const dataAge = document.getElementById("age").value;
   const dataWeight = document.getElementById("weight").value;
@@ -52,10 +60,10 @@ buttonSend.addEventListener("click", () => {
   // //Obtiene los datos del local Storage
   let dataServer = JSON.parse(localStorage.getItem("DATAUSERS"));
 
-  //Permite visualizar los datos durante 5 segundos y recarga la pagina. 
+  //Permite visualizar los datos durante 5 segundos y recarga la pagina.
   setTimeout(() => {
-    window.location.reload()
-  },5000)
+    window.location.reload();
+  }, 5000);
 });
 
 //Obtiene los datos del servidor de JSON para enviarlos al local Storage
