@@ -73,3 +73,4 @@ fetch(server)
 
 //Usar dato
 let getData = JSON.parse(localStorage.getItem("DATAUSERS"));
+

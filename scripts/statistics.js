@@ -1,9 +1,9 @@
 let dataLocal = JSON.parse(localStorage.getItem("DATAUSERS"));
-let total = dataLocal.length
+let total = dataLocal.length;
+
 
 let lastData = dataLocal[total - 1]
 localStorage.setItem('LASTDATA', JSON.stringify(lastData))
-
 
 //Agrega la cantidad de datos
 document.getElementById('container').innerHTML += `
